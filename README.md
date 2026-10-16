@@ -52,7 +52,7 @@ draft-pusher 把这段循环变成一条命令：**内容放成一个目录，�
 ## 快速开始
 
 ```bash
-git clone https://github.com/<你的账号>/draft-pusher.git && cd draft-pusher
+git clone https://github.com/wsj414855138-code/draft-pusher.git && cd draft-pusher
 
 # ① 启动调试 Chrome（首次要在弹出的窗口里登录公众号后台 / 小红书创作平台）
 ./scripts/start-chrome.sh
