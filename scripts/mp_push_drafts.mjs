@@ -187,7 +187,7 @@ async function main() {
     console.log('❌ 拿不到 token：请确认调试 Chrome 已登录公众号后台（浏览器里随便打开一个后台页即可）');
     process.exit(1);
   }
-  console.log(`内容库：${LIB}\ntoken：${TOKEN}${PAGE_MATCH ? ` ｜ 目标标签：*${PAGE_MATCH}*` : ''}\n`);
+  console.log(`内容库：${LIB}\ntoken：已获取 ✓${PAGE_MATCH ? ` ｜ 目标标签：*${PAGE_MATCH}*` : ''}\n`);
 
   for (const name of PIECES) {
     const dir = path.join(LIB, name);
@@ -251,8 +251,7 @@ async function main() {
     await sleep(600);
     const t2 = await ev('document.querySelectorAll("div.ProseMirror")[0].innerText');
     const d2 = await ev('document.querySelectorAll("div.ProseMirror")[1].innerText');
-    const paraCount = await ev('document.querySelectorAll("div.ProseMirror")[1].querySelectorAll("p").length');
-    console.log(`   标题✓(${t2.length}) 描述✓(${d2.length}字 / ${paraCount}段)`);
+    console.log(`   标题✓(${t2.length}) 描述✓(${d2.length}字)`);
 
     // ④ 插入小程序链接（可选；实测：链接必须带 # 前缀，且要点「链接」行 cursor:pointer 的说明文字）
     if (MINI_LINK) {

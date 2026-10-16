@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:1500px; height:880px; overflow:hidden; }
+.term { width:1500px; height:880px; background:#0d1117; display:flex; flex-direction:column; }
+.bar { height:66px; background:#161b22; display:flex; align-items:center; padding:0 30px; }
+.dot { width:22px; height:22px; border-radius:50%; margin-right:14px; }
+.d1 { background:#ff5f57; } .d2 { background:#febc2e; } .d3 { background:#28c840; }
+.ttl { margin-left:26px; color:#8b949e; font-size:26px; font-family:"SF Mono",Menlo,Consolas,monospace; }
+.body { flex:1; padding:56px 68px; font-family:"SF Mono",Menlo,Consolas,"PingFang SC",monospace; font-size:33px; line-height:2.0; color:#e6edf3; }
+.p { color:#7ee787; }
+.g { color:#8b949e; }
+.k { color:#7ee787; }
+</style></head><body>
+<div class="term">
+  <div class="bar"><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="ttl">draft-pusher — zsh</div></div>
+  <div class="body">
+<div><span class="p">$ </span>node scripts/mp_push_drafts.mjs --lib examples sample-piece</div>
+<div>&nbsp;</div>
+<div>▶ sample-piece</div>
+<div>   我的内容工作流：写稿 → 三个草稿箱<span class="g">（18字）｜3张图｜文案153字</span></div>
+<div>   图片：3/3</div>
+<div>   标题✓(18) 描述✓(150字)</div>
+<div class="g">   小程序链接：（未设置 --mini-link，跳过）</div>
+<div class="k">   ✅ 已存草稿</div>
+<div>&nbsp;</div>
+<div class="g">全部完成。去「内容管理 → 草稿箱」核对：https://mp.weixin.qq.com</div>
+  </div>
+</div>
+</body></html>
